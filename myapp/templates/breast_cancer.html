@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Machine Learning for Breast Cancer Diagnosis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'website/assets/css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'website/assets/css/noscript.css' %}" /></noscript>
+	</head>
+	<body class="is-preload" style="background-color:#E6EBE0;">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" >
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="home.html" class="logo" >
+									<span class="symbol"><img src="{% static 'website/images/logo.svg' %}" alt="" /></span><span class="title">Home</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="about_me.html">About Me</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1 style="text-align: center;"><u>Breast Cancer Classification using The K-Nearest Neighbors Algorithm</u></h1>
+							<span  class="image main"><img src="{% static 'website/images/breast_cancer_graph.png' %}" alt="" style="max-width: 500px; height: auto;" /></span>
+                            <p style="text-align: center; font-size: 25px;">
+								In Machine Learning, KNN (K-Nearest Neighbors Algorithm) is a supervised learning classifier that groups data points into different classes and then uses proximity to make predictions.
+								This code demonstrates the use of the algorithm to predict whether a breast mass excised from a patient is cancerous with an accuracy of 85%. 
+								The breast cancer dataset used in this code contains information about various features of breast masses, including the mean radius and the classification as malignant or benign. To prepare the data, 
+								the column containing the classification was transformed into binary values, where 1 represents malignant and 0 illustrates benign. The dataset was then split into training and testing sets, 
+								which were fed into the KNN algorithm function from the sklearn Python package to generate the graph shown above.
+								In the graph, the yellow dots represent the malignant breast masses, the purple dots represent the benign masses, and the blue dots represent the mean radii of the patients we want to diagnose. The algorithm correctly groups the "test subjects" into their respective classifications, as depicted in the graph.
+								You can find the code and the CSV file containing the breast cancer data used in the algorithm in the repository linked at the bottom of this webpage.
+								</p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer" style="background-color:rgb(80, 81, 79)">
+						<div class="inner" style="color: #F6F8FF;">
+							<section>
+                                <h2>Link to code in Github repository</h2>
+								<ul class="icons">
+									<li><a href="https://github.com/westin-wilkins/Python-Projects/tree/main/Machine%20Learning/Breast%20Cancer" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+							<section>
+
+							</section>
+							<ul class="copyright" style="color: #F6F8FF;">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'website/assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'website/assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'website/assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'website/assets/js/util.js' %}"></script>
+			<script src="{% static 'website/assets/js/main.js' %}"></script>
+
+	</body>
+</html>

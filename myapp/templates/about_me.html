@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>About Me</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'website/assets/css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'website/assets/css/noscript.css' %}" /></noscript>
+	</head>
+	<body class="is-preload" style="background-color:#E6EBE0;">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="home.html" class="logo">
+									<span class="symbol"><img src="{% static 'website/images/logo.svg' %}" alt="" /></span><span class="title">Home</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="about_me.html">About Me</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>About Me</h1>
+							<span class="image"><img src="{% static 'website/images/about_me_pic.jpg' %}" width="200" height="200" alt="" /></span>
+                            <section>
+                                <p>I recently graduated from Texas Tech University in 2022 with a Bachelor of Science in Mathematics and a minor in Physics. I was born in Plainview, Texas (A small town between Amarillo and Lubbock). 
+                                    I later moved to Lubbock, Texas, to attend Lubbock Cooper High School, where I graduated with honors. My interests widely vary depending on the time of day, including but not limited to data science, 
+                                    applications to machine learning, finance, and solving ordinary and partial differential equations. My website will eventually reflect this as I slowly add completed projects. 
+                                    My work experience primarily revolves around food service, with my current job being a Cook at H-E-B. 
+                                    This experience has honed my ability to work with others as a team to achieve goals within a tight deadline and to work in fast-paced, high-stress environments. 
+                                    I also have extensive experience providing excellent customer service. At the bottom are links to my Github, where I post completed projects and my LinkedIn page.</p>
+
+                            </section>
+						</div>
+					</div>
+
+				<!-- Footer -->
+                <footer id="footer" style="background-color:rgb(80, 81, 79)">
+                    <div class="inner" >
+                        <section>
+                            <h2 style=color:#F6F8FF>Links</h2>
+                            <ul class="icons" style=color:#F6F8FF>
+                                <li><a href="https://github.com/westin-wilkins" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                                <li><a href="https://www.linkedin.com/in/westin-wilkins-953105219/" class="icon brands style2 fa-linkedin"><span class="label">Linkedin</span></a></li>
+                            </ul>
+                        </section>
+                        <ul class="copyright" style=color:#F6F8FF>
+                            <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                        </ul>
+                    </div>
+                </footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'website/assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'website/assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'website/assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'website/assets/js/util.js' %}"></script>
+			<script src="{% static 'website/assets/js/main.js' %}"></script>
+
+	</body>
+</html>
